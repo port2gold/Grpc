@@ -6,7 +6,7 @@ namespace server
 {
     class Program
     {
-        const int port = 50051;
+        const int port = 50052;
         static void Main(string[] args)
         {
             Server server = null;

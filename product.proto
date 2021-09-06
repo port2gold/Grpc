@@ -2,7 +2,16 @@ syntax = "proto3";
 
 package product;
 
-message ProductMessage{};
+message ProductMessageRequest{
+	int64 a=1;
+	int64 b = 2;
+};
 
-service PrdouctService{};
+message ProductMessageResponse{
+	int64 result =1;
+	string message = 2;
+}
+service PrdouctService{
+	rpc Product (ProductMessageRequest) returns (ProductMessageResponse) {}
+};
 
