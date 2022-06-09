@@ -5,6 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proto", "proto", "{0B3BB908-0FA7-4079-B72E-E09A8AF0D9CF}"
 	ProjectSection(SolutionItems) = preProject
+		product.proto = product.proto
 		sum.proto = sum.proto
 	EndProjectSection
 EndProject
