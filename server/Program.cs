@@ -13,9 +13,12 @@ namespace server
 
             try
             {
+                var sumService = Sum.SumService.BindService(new SumServiceImpl());
+                var productService = Product.PrdouctService.BindService(new ProductServiceImpl());
+
                 server = new Server
                 {
-                    Services = { Sum.SumService.BindService(new SumServiceImpl())},
+                    Services = { sumService, productService },
                     Ports = { new ServerPort("localhost", port, ServerCredentials.Insecure) }
                 };
                 server.Start();

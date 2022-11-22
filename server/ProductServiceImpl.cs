@@ -1,8 +1,6 @@
 ﻿using Grpc.Core;
 using Product;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using static Product.PrdouctService;
 
