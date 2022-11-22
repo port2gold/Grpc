@@ -4,15 +4,15 @@ using System;
 using System.Threading.Tasks;
 using static Product.PrdouctService;
 
-namespace server
+namespace server.ServiceImplementation
 {
     public class ProductServiceImpl : PrdouctServiceBase
     {
         public override Task<ProductMessageResponse> Product(ProductMessageRequest request, ServerCallContext context)
         {
-            Int64 result = request.A * request.B;
+            long result = request.A * request.B;
             string message = $"The product of {request.A} and {request.B} is {result}";
-            return Task.FromResult(new ProductMessageResponse { Result = result, Message = message }) ;
+            return Task.FromResult(new ProductMessageResponse { Result = result, Message = message });
         }
     }
 }
