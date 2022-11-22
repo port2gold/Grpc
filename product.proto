@@ -1,6 +1,8 @@
 syntax = "proto3";
-
+//option csharp_namespace = namespace
 package product;
+
+//Import "google/protobuf"
 
 message ProductMessageRequest{
 	int64 a=1;
